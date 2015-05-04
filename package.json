@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.webapps.rr.com:jkaminetsky/tap.git"
+    "url": "git@github.webapps.rr.com:jkaminetsky/tap-stream-helpers.git"
   },
   "author": "Joshua Kaminetsky",
   "license": "MIT",
