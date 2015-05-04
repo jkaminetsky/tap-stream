@@ -5,6 +5,8 @@
  * getResults is a function to return the list of results
  */
 
+'use strict';
+
 var fs = require('fs'),
     map = require('map-stream'),
     mkdirp = require('mkdirp'),
@@ -12,8 +14,6 @@ var fs = require('fs'),
     tapStringBuilder = require('./tap-string-builder');
 
 module.exports = function (outputFilePathBase, getResults) {
-    'use strict';
-
     var i = 1;
 
     return map(function (f, cb) {

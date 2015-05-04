@@ -2,6 +2,8 @@
  * Build TAP files based on results
  */
 
+'use strict';
+
 var os = require('os'),
     util = require('util');
 
@@ -11,8 +13,6 @@ module.exports = {
      * Get the header TAP line
      */
     getHeader: function (length) {
-        'use strict';
-
         return util.format('1..%d%sok %d Test was run%s', length + 1, os.EOL, length, os.EOL);
     },
 
@@ -20,8 +20,6 @@ module.exports = {
      * Get a single result line formatted with line/column info
      */
     getFileLine: function (options) {
-        'use strict';
-
         var isOkString = options.isOk ? 'ok' : 'not ok';
 
         return util.format(
@@ -39,8 +37,6 @@ module.exports = {
      * Get single line result
      */
     getLine: function (options) {
-        'use strict';
-
         var isOkString = options.isOk ? 'ok' : 'not ok';
 
         return util.format('%s %d %s: %s',
@@ -56,8 +52,6 @@ module.exports = {
      * Get the footer TAP line
      */
     getFooter: function (length) {
-        'use strict';
-
         return util.format('#TAP meta information%s%d errors%s', os.EOL, length, os.EOL);
     },
 
@@ -65,8 +59,6 @@ module.exports = {
      * Get text for an entire tap file
      */
     getTap: function (items) {
-        'use strict';
-
         var text = this.getHeader(items.length);
 
         for (var i = 0; i < items.length; i++) {

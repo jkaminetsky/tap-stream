@@ -1,0 +1,13 @@
+.DS_Store
+*~
+
+*.swp
+*.swo
+
+*.log
+*.log.*
+
+*.db
+
+node_modules/
+bower_components/

@@ -4,12 +4,17 @@
   "description": "Test Anything Protocol helpers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
     "url": "git@github.webapps.rr.com:jkaminetsky/tap.git"
   },
   "author": "Joshua Kaminetsky",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.10.0",
+    "jshint-stylish": "^1.0.2"
+  }
 }
